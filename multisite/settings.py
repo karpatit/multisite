@@ -25,9 +25,10 @@ SECRET_KEY = 'django-insecure-a!^6yhj0bx6f-azvgpt0t-z4+2^+#*&y)w8h1^u3hxul5ggjt$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','test1.hitheal.org.il','test2.hitheal.org.il','test3.hitheal.org.il']
-
-#SITE_ID = 2
+#ALLOWED_HOSTS = ['127.0.0.1','localhost','192.168.0.103']
+ALLOWED_HOSTS = ['*']
+#### on installation uncomment the following line
+#SITE_ID = 1
 
 # Application definition
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'firebase',
 ]
 
 MIDDLEWARE = [

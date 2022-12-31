@@ -1,0 +1,5 @@
+*.ini
+*.json
+*.sqlite3
+*.pyc
+venv/*
